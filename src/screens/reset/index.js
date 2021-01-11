@@ -66,7 +66,7 @@ function Reset() {
             <h3>Redefinição de e-mail</h3>
 
             <p style={{ fontStyle: "italic", fontSize: 10 }}>
-              Insira um e-mail para que possamos cadastrar sua conta na PageX
+              Insira um e-mail para que possamos efetuar seu cadastro no PageX Builder.
             </p>
 
             <div className="form-group">
@@ -91,8 +91,7 @@ function Reset() {
 
               {isMailValid && (
                 <span className="error-input">
-                  O e-mail é inválido ou temporário ou já está sendo utilizado
-                  pela plataforma.
+                  O e-mail é inválido ou não pode ser utilizado na plataforma. Favor inserir um novo endereço de e-mail.
                 </span>
               )}
             </div>
