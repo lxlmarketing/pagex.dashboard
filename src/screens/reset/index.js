@@ -19,7 +19,7 @@ function Reset() {
   const token = query.get("token");
 
   if (!token) {
-    alert("Link inválido, redirecionanto para o login do PageX");
+    alert("Link inválido, redirecionando para o login do PageX");
     return (window.location.href = "https://app.pagex.com.br/");
   }
 
@@ -45,12 +45,24 @@ function Reset() {
         return;
       }
 
-      alert("Sucesso, verifique o e-mail cadastrado na hotmart");
+      alert("Sucesso! Seu acesso foi enviado em seu e-mail cadastrado na Hotmart");
       return (window.location.href = "https://app.pagex.com.br/");
     });
   };
 
   return (
+    <head>
+      <meta charset="utf-8"/>
+      <link rel="icon" href="https://app.pagex.com.br/assets/label/pagex.com.br/favicon/favicon.png"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1"/>
+      <meta name="theme-color" content="#000000"/>
+      <meta name="description" content="Web site created using create-react-app"/>
+      <link rel="apple-touch-icon" href="/logo192.png"/>
+      <link rel="manifest" href="/manifest.json"/>
+      <title>PageX</title>
+      <link href="/static/css/2.1a02f21c.chunk.css" rel="stylesheet">
+      <link href="/static/css/main.9811f9f7.chunk.css" rel="stylesheet">
+    </head>
     <div className="reset-container">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container d-flex justify-content-center">
@@ -91,7 +103,7 @@ function Reset() {
 
               {isMailValid && (
                 <span className="error-input">
-                  O e-mail é inválido ou não pode ser utilizado na plataforma. Favor inserir um novo endereço de e-mail.
+                  O e-mail é inválido, repetido ou não pode ser utilizado na plataforma. Favor inserir um novo endereço de e-mail.
                 </span>
               )}
             </div>
