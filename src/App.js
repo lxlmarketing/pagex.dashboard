@@ -11,12 +11,12 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/reset">
+        <Route path="*">
           <Reset />
         </Route>
-        <Route path="/">
+        {/* <Route path="/">
           <Home />
-        </Route>
+        </Route> */}
       </Switch>
     </Router>
   );
